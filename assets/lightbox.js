@@ -49,9 +49,9 @@ window.onload = (event) => {
     console.log(`${org}: Showing lightbox, new visit (${today}) logged. `);
   } else {
 // If the user has visited us before, but its not been more than 24 hours, hide the lightbox
-    if(today - lastVisit < test){
+    if(today - lastVisit < fullDay){
       destroyLightbox()
-      console.log(`${org}: Don't show lightbox, it's too soon! Last visit was ${new Date(Number(lastVisit)).toLocaleString()}`)
+      console.log(`${org}: Not showing lightbox, it's too soon! Last visit was ${new Date(Number(lastVisit)).toLocaleString()}`)
     } else {
 // If the user has visited us before, but it's been more than 24 hours, show the lightbox
       localStorage.setItem("lastVisit", Date.now());
