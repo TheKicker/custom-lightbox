@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Custom Lightbox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/lightbox.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .nav{
+                background: black;
+                color: whitesmoke;
+                padding: 1rem 0.5rem;
+                display: flex;
+                flex-direction: row;
+            }
+            .container{
+                width: 60%;
+                margin: auto;
+            }
+            .main{
+                margin: 3rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <h2>Very Great Coding Co.</h2>
+        </div>
+        <div class="container">
+            <section class="main">
+                <h1>This is an example page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus minima sint cum omnis facilis accusamus neque corrupti officia magnam vitae a iure, id, odit dolorem fugit delectus itaque rem qui! Consequuntur voluptatum asperiores quo accusantium?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus minima sint cum omnis facilis accusamus neque corrupti officia magnam vitae a iure, id, odit dolorem fugit delectus itaque rem qui! Consequuntur voluptatum asperiores quo accusantium?</p>
+            </section>
+        </div>
+        
+        <!-- The Lightbox -->
+        <div id="lightbox" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">X</span>
+              <br>
+              <div>
+                <div>
+                  <h2 class="title">Dax says what a wonderful lightbox!</h2>
+                  <br>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias quis ad, hic libero odit explicabo obcaecati quam laborum veniam, facilis quibusdam at? Doloribus quae dolores illum, cum atque explicabo, exercitationem a in debitis laboriosam repudiandae, magni deserunt culpa. Dolorem!
+                        </p>
+                        <br>
+                        <i>
+                            * All feedback is welcome.
+                        </i>
+                    </div>
+                  <br>
+                    <div class="group">
+                        <div class="sub-parent">
+                            <div class="child">
+                                <a href="https://duckduckgo.com" target="_blank" rel="noopener">DuckDuckGo</a>
+                            </div>
+                            <div class="child">
+                                <a href="https://google.com" target="_blank" rel="noopener">Google</a>
+                            </div>
+                        </div>
+                        <div class="hide-mobile" onClick="destroyLightbox()">
+                            <a href="https://duckduckgo.com">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F9%2F90%2FThe_DuckDuckGo_Duck.png&f=1&nofb=1" class="image">
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script src="assets/lightbox.js" async defer></script>
+    </body>
+</html>
