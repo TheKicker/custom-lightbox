@@ -11,6 +11,14 @@ var fullDay = 86400000
 var today = Date.now();
 var lastVisit = localStorage.getItem("lastVisit");
 
+// Function to clear local storage variable
+function refreshMe(){
+  localStorage.removeItem("lastVisit")
+  setTimeout(()=>{
+    location.reload()
+  }, 3000)
+}
+
 // Function to show the lightbox as long as it's active
 function launchLightbox(){
   if (display == true){
